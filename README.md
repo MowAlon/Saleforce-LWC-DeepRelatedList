@@ -1,8 +1,8 @@
 # Deep Related List
 
-So often, I've heard from people who want to display related records that aren't direct children of the current record. Instead, they're grandchildren, great grandchildren.
+Often, we want to display related records that aren't direct children of the current record. Instead, they're grandchildren, great grandchildren, or even some deeper relationship.
 
-This component does that for you (and even a little more) while looking very much like the standard Related List components.
+This component does gives you that option (and even a little more) while looking very much like the standard Related List components.
 <br><br>
 
 > Note: In this document, I refer to "SOQL-format" because I don't know what else to call it. I'm referring to the special, cross-object dot-notation that Salesforce uses in which we convert the "__c" of a custom reference field to "__r" to refer to the related object and then use dots to separate the objects from their fields... like "Custom_Relationship__r.Another_Custom_Relationship__r.Custom_Field__c" or "StandardLookup.StandardField" or "Custom_Relationship__r.StandardLookup.Custom_Field__c"
