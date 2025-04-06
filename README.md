@@ -79,10 +79,10 @@ Detailed explanation of all three parts:
 3. **Id Mask (only used with reference fields)**
     * Allows you to replace the Id value with something else, like the referenced record's Name. When used, the content will hyperlink to referenced record.
     * Common example: "Name" when using the record's Id field, so the record's Name is displayed instead of the actual Id value.
-    * A complex example: In the screenshot above, the records displayed are Opportunity Line Item records. The "Product" column is a link to the "Product2" object masked by that Product's "Name" field. Because Opportunity Line Items relate to Products through the "Product2Id" field, that's the first part of the column info. This last part, the ID Mask, is "Product2.Name" because that's the reference to the Product's Name field from the Opportunity Line Item object (which is the .
+    * A complex example: In the screenshot above, the records displayed are Opportunity Line Item records. The "Product" column is a link to the "Product2" object that is related to the Opportunity Line Itemmasked by that Product's "Name" field. Because Opportunity Line Items relate to Products through the "Product2Id" field, that's the first part of the column info. This last part, the ID Mask, is "Product2.Name" because that's the reference to the Product's Name field from the Opportunity Line Item object.
 
 **Column Info from screenshot:**  
-Id :: Opportunity :: Name, Product2Id :: Product :: Product2.Name, Quantity, CreatedDate :: Date Added, UnitPrice, TotalPrice
+Product2Id :: Product :: Product2.Name, OpportunityId :: Opportunity :: Opportunity.Name, Quantity, CreatedDate :: Date Added, UnitPrice, TotalPrice
 <br><br>
 
 ### Filters (CSV, can use $recordId)
