@@ -94,5 +94,4 @@ export default class DeepRelatedList extends LightningElement {
             return columnData;
         }
 
-
 }
