@@ -61,6 +61,8 @@ Again, normally, the parent record is the record of the current page, but it cou
 ### <ins>Column Info</ins>
 A comma-separated list of the fields to display.
 
+Fields in this section ARE case-sensitive so be sure you're exact. For example, use "Id" rather than "ID".
+
 Supports related fields using SOQL-format.
 
 The fields are assigned from the perspective of the related records' object. In the screenshot example above, where "OpportunityLineItem" is the object being displayed, this means the "Name" field is an Opportunity Line Item's name. The related Opportunity's name would be "Opportunity.Name". The name of a custom relationship would be something like "Custom_Relationship__r.Name".
