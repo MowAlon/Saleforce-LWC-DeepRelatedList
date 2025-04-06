@@ -2,7 +2,10 @@
 
 Often, we want to display related records that aren't direct children of the current record. Instead, they're grandchildren, great grandchildren, or even some deeper relationship.
 
-This component does gives you that option (and even a little more) while looking very much like the standard Related List components.
+This component gives you that option (and even a little more) while looking very much like the standard Related List components.
+
+[Install in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tak0000007ci5&isdtp=p1)  
+[Install in a Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tak0000007ci5&isdtp=p1)
 <br><br>
 
 > Note: In this document, I refer to "SOQL-format" because I don't know what else to call it. I'm referring to the special, cross-object dot-notation that Salesforce uses in which we convert the "__c" of a custom reference field to "__r" to refer to the related object and then use dots to separate the objects from their fields... like "Custom_Relationship__r.Another_Custom_Relationship__r.Custom_Field__c" or "StandardLookup.StandardField" or "Custom_Relationship__r.StandardLookup.Custom_Field__c"
@@ -22,7 +25,7 @@ This component does gives you that option (and even a little more) while looking
 ## Instructions
 
 ### Title
-Set the title to whatever you want
+Set the title to whatever you want.
 <br><br>
 
 ### Icon Name
